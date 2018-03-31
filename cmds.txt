@@ -1,0 +1,32 @@
+git config --global user.name "Murali S"
+
+git config --global user.email "muraliduke4461@gmail.com"
+
+Generate keys
+https://help.github.com/articles/connecting-to-github-with-ssh/
+
+
+1).ssh-keygen -t rsa -b 4096 -C "muraliduke4461@gmail.com"
+
+Your identification has been saved in /c/Users/Murali/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Murali/.ssh/id_rsa.pub.
+
+2).eval $(ssh-agent -s)
+
+3).ssh-add ~/.ssh/id_rsa
+4.clip < ~/.ssh/id_rsa.pub
+
+NOW ADD IT o n github the copied ssh key
+
+git remote add origin git@github.com:Muraliduke/react-redux-deployed-prod.git
+
+git pull origin master
+
+add a new file
+
+git status
+
+git add anewfiles.txt
+
+git status
+
